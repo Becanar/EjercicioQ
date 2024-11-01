@@ -34,13 +34,13 @@ public class Temporizador extends AnchorPane {
     private Timer timer;
 
     @FXML
-    private Label m1; // Dígito de las decenas de minutos
+    private Label m1;
     @FXML
-    private Label m2; // Dígito de las unidades de minutos
+    private Label m2;
     @FXML
-    private Label s1; // Dígito de las decenas de segundos
+    private Label s1;
     @FXML
-    private Label s2; // Dígito de las unidades de segundos
+    private Label s2;
 
     /**
      * Constructor de la clase Temporizador.
@@ -50,7 +50,7 @@ public class Temporizador extends AnchorPane {
     public Temporizador() {
         this.fin = new SimpleBooleanProperty(false);
         this.segundos = -1;
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("fxml/Temporizador.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/ejercicioq/Temporizador.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
         try {
